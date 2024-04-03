@@ -84,7 +84,7 @@ def main():
     parser.add_argument("repo1", help="First repository to compare")
     parser.add_argument("repo2", help="Second repository to compare")
     args = parser.parse_args()
-    if (args.repo1 != "p9" or "p10" or "sisyphus") or (args.repo2 != "p9" or "p10" or "sisyphus"):
+    if args.repo1 not in ["p9", "p10", "sisyphus"] or args.repo2 not in ["p9", "p10", "sisyphus"]:
         print("According to the information, we can only use the 'sisyphus', 'p10' and 'p9' repositories with this API request")
         exit()
 
