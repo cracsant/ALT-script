@@ -7,22 +7,22 @@ This CLI utility compares packages between two repositories using a provided RES
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/cracsant/ALT-script
+```git clone https://github.com/cracsant/ALT-script
 
 2. Navigate to the cloned repository:
 
-cd ALT-script
+```cd ALT-script
 
 
 ## Usage
 
 To run the utility, use the following command:
 
-python3 script.py repo1 repo2
+```python3 script.py repo1 repo2
 
 Replace "repo1" and "repo2" with the names of the repositories you want to compare. The available repository names are 'sisyphus', 'p10', and 'p9', according to the information provided from API requests. For example, to compare packages between 'sisyphus' and 'p10', you would run:
 
-python3 script.py sisyphus p10
+```python3 script.py sisyphus p10
 
 The utility will fetch package data from the specified repositories, perform comparisons, and save the results in JSON files within the 'Comparison1', 'Comparison2', and 'Comparison3' folders.
 
@@ -30,4 +30,4 @@ The utility will fetch package data from the specified repositories, perform com
 
 This utility requires Python 3 and the requests library. You can install the dependencies using pip:
 
-pip install requests
+```pip install requests
